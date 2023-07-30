@@ -1,5 +1,5 @@
-/* mon  */
-.b-rouge{
+/* mon header qui presente netflix */
+.header{
    background-image: linear-gradient(to top,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%),url("assets/back.jpg");
     width: 100vw;
     height: 100vh;
@@ -51,9 +51,7 @@ input{
   padding: 1.5rem;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 20px;
-
-  
+  font-size: 20px; 
 }
 .b-rouge{
   width: 200px;
@@ -62,4 +60,33 @@ input{
   color: white;
   padding: 12px 24px;
   border-radius: 10px;
+}
+hr{
+  background-color:hsla(218, 48%, 53%, 0.274);
+  width: 100vw;
+  height: 1vh;
+  margin: 0px;
+}
+/* debut de mon premier div*/
+
+.tv{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: #fff;
+}
+.tv-tele{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tv h2{
+  font-size: 60px;
+  text-align:left;
+}
+.tv p{
+  font-size: 30px;
+  margin-top: -30px;
 }
