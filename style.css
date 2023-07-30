@@ -1,5 +1,5 @@
-
-.header{
+/* mon  */
+.b-rouge{
    background-image: linear-gradient(to top,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%),url("assets/back.jpg");
     width: 100vw;
     height: 100vh;
@@ -45,17 +45,21 @@
   justify-content: center;
   gap: 10px;
 }
-input::placeholder{
+input{
   width: 300px;
-  border-radius: 5px;
+  border-radius: 5px solid #fff;
   padding: 1.5rem;
-  color: ;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+
+  
 }
 .b-rouge{
   width: 200px;
   font-size: 20px;
   background:#E50914;
-  color: #fff;
+  color: white;
   padding: 12px 24px;
   border-radius: 10px;
 }
