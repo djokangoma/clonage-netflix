@@ -1,4 +1,4 @@
-/* mon header qui presente netflix */
+  /* mon header qui presente netflix */
 .header{
    background-image: linear-gradient(to top,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%),url("assets/back.jpg");
     width: 100vw;
@@ -73,13 +73,13 @@ hr{
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: black;
   color: #fff;
 }
 .tv-tele{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .tv h2{
@@ -89,4 +89,39 @@ hr{
 .tv p{
   font-size: 30px;
   margin-top: -30px;
+}
+
+/* la deuxieme div: la section phone*/
+.phone{
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.block-phone{
+     display: flex;
+     justify-content: space-between;
+}
+.phone h2{
+  font-size: 50px;
+}
+.phone p{
+  font-size: 30px;
+}
+
+/* ma trasieme div*/
+.texte{
+  margin-top: -42px;
+  background-color: black;
+  color: #fff;
+  height: 50vh;
+  width: 100vw;
+}
+.texte h2{
+  font-size: 50px;
+}
+.texte p{
+  font-size: 30px;
 }
