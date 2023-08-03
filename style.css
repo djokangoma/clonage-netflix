@@ -67,6 +67,12 @@ hr{
   height: 1vh;
   margin: 0px;
 }
+/* le main de ma page*/
+main{
+  background-color: black;
+  color:#fff;
+
+}
 /* debut de mon premier div*/
 
 .tv{
