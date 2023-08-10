@@ -1,4 +1,8 @@
-  /* mon header qui presente netflix */
+  *{
+    margin:0;
+    padding: 0;
+  }
+/* mon header qui presente netflix */
 .header{
    background-image: linear-gradient(to top,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%),url("assets/back.jpg");
     width: 100vw;
@@ -23,7 +27,8 @@
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
-  width: 1200px;
+  width: 1000px;
+  margin-top:-25px;
 }
 .Netflix{
     font-size: 50px;
@@ -61,23 +66,19 @@ input{
   padding: 12px 24px;
   border-radius: 10px;
 }
-hr{
-  background-color:hsla(218, 48%, 53%, 0.274);
-  width: 100vw;
-  height: 1vh;
-  margin: 0px;
-}
+
 /* le main de ma page*/
 main{
   background-color: black;
   color:#fff;
+  width: 100wh;
 
 }
 /* debut de mon premier div*/
 
 .tv{
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
 }
@@ -96,10 +97,7 @@ main{
   margin-top: -30px;
 }
 hr{
-  background-color:hsla(218, 48%, 53%, 0.274);
-  width: 100vw;
-  height: 1vh;
-  margin: 0px;
+  color: solide rgba(255,255,255,.5)
 }
 
 /* la deuxieme div: la section phone*/
@@ -125,8 +123,6 @@ hr{
 /* ma trosieme div*/
 .texte{
   margin-top: -42px;
-  background-color: black;
-  color: #fff;
   height: 50vh;
   width: 100vw;
 }
@@ -135,4 +131,58 @@ hr{
 }
 .texte p{
   font-size: 30px;
+}
+.kid{
+  display: flex;
+  justify-content: center;
+}
+.kids{
+  height: 70vh;
+  width: 100wh;
+  display: flex;
+  justify-content: space-between;
+}
+.kids h2{
+  font-size: 50px;
+}
+.kids p{
+  font-size: 30px;
+}
+
+/* mon footer*/
+footer{
+  background-color: black;
+  color: #fff;
+  height: 70vh;
+  width: 100wh;
+  font-family: sans-serif;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-a{
+  display: flex;
+  gap: 150px;
+  margin-top: 100px;
+}
+.lien{
+  color: #fff;
+}
+.footer-a a{
+  color:#fff;
+  line-height: 2;
+}
+.langues{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+}
+.footer-last{
+  margin-top: 40px;
+  margin-left: -700px;
 }
