@@ -1,29 +1,33 @@
   *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
   }
 /* mon header qui presente netflix */
-.header{
-   background-image: linear-gradient(to top,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%),url("assets/back.jpg");
+.header-netflix{
+   background-image: linear-gradient(to top,rgba(0,0,0,0.1)0,rgba(0,0,0,0)60%,
+    rgba(0,0,0,0.1)100%),url("assets/back.jpg");
     width: 100vw;
     height: 100vh;
     color: #fff;
 }
-.header h2{
+.header-netflix h2{
   font-size: 50px;
   text-align: center;
   font-family: Netflix sans, Helvetica,'Segoe UI', 'roboto', 'ubuntu', Verdana, sans-serif;
 }
-.header p{
-  font-size: 30px;
+.header-netflix p{
+  font-size: 25px;
   line-height: 60px;
   text-align: center;
+  font-weight: bold;
 }
-.container{
+.logo-netflix{
   display: flex;
   justify-content: center;
 }
-.navbar{
+.navbar-netflix{
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
@@ -33,14 +37,15 @@
 .Netflix{
     font-size: 50px;
     color:#E50914;
+    margin-top: 50px;
 }
 .btn{
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 5px;
   color: #fff;
   background-color: #E50914;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 5px solid;
   width: 100px;
   height: 35px;
 
@@ -72,7 +77,6 @@ main{
   background-color: black;
   color:#fff;
   width: 100wh;
-
 }
 /* debut de mon premier div*/
 
