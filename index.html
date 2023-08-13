@@ -13,7 +13,7 @@
             <div class="logo-netflix">
                 <div class="navbar-netflix">
                     <h1 class="Netflix">NETFLIX</h1>
-                    <button class="btn"> s'identifier</button>
+                    <button class="btn-netflix"> se connecter </button>
                 </div>
             </div>
             <h2> 
@@ -23,9 +23,12 @@
                 les plans commencent maintenant à 2,99 USD/mois. <br>
                 Prêt à regarder ? Entrez votre e-mail pour créer ou redémarrer votre abonnement.
             </p>
-            <div class="btn-email">
-            <input type="email" placeholder="adresse e-mail" required>
-            <button type="submit" class="b-rouge">commencer ></button>
+            <div class="container-email-netflix">
+                <div class="email-netflix">
+                    <input type="email" required>
+                    <label> Adresse e-mail </label>
+                </div>
+                <button type="submit" class="btn-rouge">commencer ></button>
             </div>
         </div>
     </header> 
@@ -35,7 +38,7 @@
         <div class="tv">
             <div class="tv-tele">
                 <div>
-                    <h2>profitez sur votre <br> téléviseur </h2>
+                    <h2>Profitez sur votre <br> téléviseur </h2>
                     <p>Regardez sur les téléviseurs intelligents ,<br>
                     Playstation, Xbox, Chromecast, Apple TV, <br>
                     lecteurs Blu-ray, etc.</p>
@@ -71,10 +74,11 @@
             </p>
         </div>
         <hr>
+        <!-- ma quatrième div sur le kid -->
         <div class="kid">
-        <div class="kids">
+        <div class="kids-container">
             <img src="assets/kids.png" alt="kids" height="400vh" width="500wh" >
-            <div>
+            <div class="kids-text">
               <h2>Créer des profils <br> pour les enfants</h2>
               <p>Envoyez les enfants vivre des aventures avec <br>
                  leurs personnages préférés dans un espace  <br>
@@ -84,15 +88,43 @@
         </div>
         </div>
         <hr>
+        <!-- ma cinquieme div -->
         <div class="frequently">
-               hhh
-               dd
+            <h2>Questions fréquemment posées</h2>
+            <div class="btn-frequently">
+                <button>
+                    Qu'est-ce que Netflix?   <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                </button> 
+                <button>
+                    Combien coute Netflix?   <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                </button>
+                <button>
+                    Ou puis-je regarder?   <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                </button>
+                <button>
+                    Comment puis-je annuler?   <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                </button>
+                <button>
+                    Que puis-je regarder sur Netflix?   <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                </button>
+                <button>
+                    Est-ce que Netflix est bon pour les enfants?   <ion-icon name="add-outline" class="add-outline"></ion-icon>
+                </button>
+            </div>       
+            <p>Prêt à regarder ? Entrez votre e-mail pour créer ou redémarrer votre abonnement</p>
+            <div class="container-email-netflix">
+                <div class="email-netflix">
+                    <input type="email" required>
+                    <label> Adresse e-mail </label>
+                </div>
+                <button type="submit" class="btn-rouge">commencer ></button>
+            </div>   
         </div>
         <hr>
     </main>    
         <footer>
             <div class="footer">
-                       <a href="#" class="lien"> Des questions? contactez-nous.</a> <br>
+                <a href="#" class="lien"> Des questions? contactez-nous.</a> <br>
                 <div class="footer-a">
                     <div>
                         <a href="#">FAQ</a> <br>
@@ -118,11 +150,13 @@
                     </div>
                     <div class="footer-last">
                         <select name="langues" id="langues" class="langues" >
-                            <option value="English">English</option>
+                            <option value="English"  class="langues"><ion-icon name="globe-outline"></ion-icon>;English</option>
                         </select>
                         <h4>Netflix Congo-Kinshasa</h4>
                     </div>
                 </div>
         </footer>
+        <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script > 
+        <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script >        
 </body>
 </html>

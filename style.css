@@ -6,13 +6,16 @@
   }
 /* mon header qui presente netflix */
 .header-netflix{
-   background-image: linear-gradient(to top,rgba(0,0,0,0.1)0,rgba(0,0,0,0)60%,
-    rgba(0,0,0,0.1)100%),url("assets/back.jpg");
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.5)0,rgba(0,0,0,0.5),
+    rgba(0,0,0,0.9)100%),url("assets/netflix-back.jpg");
     width: 100vw;
     height: 100vh;
     color: #fff;
+    background-size: cover;
+    background-position: center;
 }
 .header-netflix h2{
+  margin-top: 250px;
   font-size: 50px;
   text-align: center;
   font-family: Netflix sans, Helvetica,'Segoe UI', 'roboto', 'ubuntu', Verdana, sans-serif;
@@ -26,44 +29,65 @@
 .logo-netflix{
   display: flex;
   justify-content: center;
+  align-items:center;
 }
 .navbar-netflix{
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
   width: 1000px;
-  margin-top:-25px;
+  
 }
 .Netflix{
-    font-size: 50px;
+    font-size: 40px;
     color:#E50914;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-.btn{
-  margin-top: 70px;
+.btn-netflix{
+  margin-top: 20px;
   padding: 5px;
   color: #fff;
   background-color: #E50914;
-  font-size: 15px;
-  border-radius: 5px solid;
-  width: 100px;
-  height: 35px;
-
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 12%;
+  height: 40px;
 }
-.btn-email{
+button{
+  cursor: pointer;
+}
+.container-email-netflix{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-input{
-  width: 300px;
-  border-radius: 5px solid #fff;
-  padding: 1.5rem;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px; 
+.email-netflix{
+  position: relative;
 }
-.b-rouge{
+.email-netflix input{
+  width: 400px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 1em ;
+}
+.email-netflix label{
+  position: absolute;
+  left: 30px;
+  top: 35%;
+  transform: translateY(-50%);
+  font-size: 1em;
+}
+.email-netflix input:focus~label,
+.email-netflix input:valid~label{
+  top:15px;
+  font-size: .8em;
+  padding: 0 1px;
+}
+.btn-rouge{
   width: 200px;
   font-size: 20px;
   background:#E50914;
@@ -82,9 +106,10 @@ main{
 
 .tv{
   width: 100vw;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .tv-tele{
   display: flex;
@@ -95,10 +120,12 @@ main{
 .tv h2{
   font-size: 50px;
   text-align:left;
+  line-height: 70px;
 }
 .tv p{
   font-size: 25px;
-  margin-top: -30px;
+  margin-top: 20px;
+  line-height: -5px;
 }
 hr{
   color: solide rgba(255,255,255,.5)
@@ -110,7 +137,7 @@ hr{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
 .block-phone{
      display: flex;
@@ -122,35 +149,87 @@ hr{
 }
 .phone p{
   font-size: 30px;
+  margin-top: 20px;
 }
 
 /* ma trosieme div*/
 .texte{
-  margin-top: -42px;
+  margin-top: 100px;
   height: 50vh;
   width: 100vw;
+  margin-left: 150px;
 }
 .texte h2{
   font-size: 50px;
+  font-weight: bold;
 }
 .texte p{
-  font-size: 30px;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: -5px;
 }
+
+/* ma quatrieme  div*/
 .kid{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.kids{
+.kids-container{
   height: 70vh;
   width: 100wh;
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
-.kids h2{
+.kids-text{
+  margin-top:40px;
+}
+.kids-container h2{
+  font-size: 45px;
+  margin-top: 50px;
+  line-height: -20px;
+}
+.kids-container p{
+  font-size: 25px;
+  margin-top: 25px;
+  line-height: -20px;
+}
+/*ma cinquième div*/
+.frequently{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.frequently h2{
+  text-align: center;
   font-size: 50px;
 }
-.kids p{
-  font-size: 30px;
+
+.btn-frequently{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-frequently button{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  background: rgba(189, 184, 184, 0.181);
+  color: #fff;
+  height: 80px;
+  font-size: 35px;
+  padding: 20px 10px;
+  margin: 5px; 
+}
+.frequently p{
+  font-size: 20px;
+  margin: 40px 0px 30px 0px;
+}
+.add-outline{
+  font-size: 55px;
+  margin-top: -10px;
 }
 
 /* mon footer*/
@@ -160,13 +239,16 @@ footer{
   height: 70vh;
   width: 100wh;
   font-family: sans-serif;
-}
+ }
 .footer{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.lien{
+  margin: 70px 700px -90px 0px ;
+  /*margin-right: 700px;*/
+}
 .footer-a{
   display: flex;
   gap: 150px;
@@ -179,6 +261,7 @@ footer{
   color:#fff;
   line-height: 2;
 }
+
 .langues{
   width: 100px;
   height: 30px;
@@ -190,3 +273,7 @@ footer{
   margin-top: 40px;
   margin-left: -700px;
 }
+/*
+.langues::before{
+  content:'<ion-icon name="globe-outline"></ion-icon>';
+}*/
