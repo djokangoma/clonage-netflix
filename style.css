@@ -4,27 +4,33 @@
     box-sizing: border-box;
     font-family: sans-serif;
   }
+  h2{
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  p{
+    font-weight: 400;
+    font-size: 1.5em;
+  }
 /* mon header qui presente netflix */
 .header-netflix{
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0.5)0,rgba(0,0,0,0.5),
-    rgba(0,0,0,0.9)100%),url("assets/netflix-back.jpg");
+  background-image: linear-gradient(to top,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.0)60%,
+    rgba(0,0,0,0.8) 100%),url("assets/netflix-back.jpg");
     width: 100vw;
     height: 100vh;
     color: #fff;
     background-size: cover;
     background-position: center;
 }
+
 .header-netflix h2{
   margin-top: 250px;
-  font-size: 50px;
   text-align: center;
   font-family: Netflix sans, Helvetica,'Segoe UI', 'roboto', 'ubuntu', Verdana, sans-serif;
 }
 .header-netflix p{
-  font-size: 25px;
   line-height: 60px;
   text-align: center;
-  font-weight: bold;
 }
 .logo-netflix{
   display: flex;
@@ -40,67 +46,80 @@
 }
 .Netflix{
     font-size: 40px;
-    color:#E50914;
+    color:#c11119;
     margin-top: 20px;
+    transform: rotate(-30deg,20deg);
 }
-.btn-netflix{
+.btn-signIn{
   margin-top: 20px;
   padding: 5px;
   color: #fff;
-  background-color: #E50914;
+  background-color: #c11119;
   font-size: 1rem;
+  border: 1px solid #c11119;
   border-radius: 5px;
-  width: 12%;
+  width: 8%;
   height: 40px;
 }
 button{
   cursor: pointer;
 }
-.container-email-netflix{
+.container-email-btn{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.email-netflix{
+.email-label{
   position: relative;
 }
-.email-netflix input{
+.email-label input{
   width: 400px;
   height: 60px;
   border: 1px solid #fff;
   border-radius: 5px;
+  padding: 1.5rem 1rem 0.5rem;
   background-color: transparent;
-  outline: none;
   color: #fff;
   font-size: 1em ;
 }
-.email-netflix label{
+.email-label label{
   position: absolute;
   left: 30px;
   top: 35%;
   transform: translateY(-50%);
   font-size: 1em;
 }
-.email-netflix input:focus~label,
-.email-netflix input:valid~label{
+.email-label input:focus~label,
+.email-label input:valid~label{
   top:15px;
   font-size: .8em;
   padding: 0 1px;
 }
-.btn-rouge{
+.btn-getStarted{
   width: 200px;
-  font-size: 20px;
-  background:#E50914;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background:#c11119;
   color: white;
-  padding: 12px 24px;
-  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #c11119;
+  border-radius: 5px;
 }
 
+/*media queries 
+@media screen and (max-width: 959.98px)
+.default-ltr-cache-12idgbt {
+    height: 5rem;
+}
+@media screen and (min-width: 600px)
+.default-ltr-cache-12idgbt {
+    max-width: calc(100% - 4rem);
+}*/
 /* le main de ma page*/
 main{
   background-color: black;
   color:#fff;
-  width: 100wh;
+  width: 100vw;
 }
 /* debut de mon premier div*/
 
@@ -118,17 +137,18 @@ main{
   gap: 90px;
 }
 .tv h2{
-  font-size: 50px;
   text-align:left;
   line-height: 70px;
 }
 .tv p{
   font-size: 25px;
   margin-top: 20px;
-  line-height: -5px;
+  line-height: -20px;
 }
 hr{
-  color: solide rgba(255,255,255,.5)
+  border: 1px solide #232323;
+  height: 0.2rem;
+  bottom: -0.5rem;
 }
 
 /* la deuxieme div: la section phone*/
@@ -216,12 +236,13 @@ hr{
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  background: rgba(189, 184, 184, 0.181);
+  background: #bdb8b82e;
   color: #fff;
   height: 80px;
-  font-size: 35px;
+  font-size: 1.5rem;
   padding: 20px 10px;
   margin: 5px; 
+  border: 1px solid #bdb8b82e;
 }
 .frequently p{
   font-size: 20px;
@@ -237,7 +258,7 @@ footer{
   background-color: black;
   color: #fff;
   height: 70vh;
-  width: 100wh;
+  width: 100vw;
   font-family: sans-serif;
  }
 .footer{
@@ -246,13 +267,14 @@ footer{
   align-items: center;
 }
 .lien{
-  margin: 70px 700px -90px 0px ;
+  margin: 70px 760px -90px 0px ;
   /*margin-right: 700px;*/
 }
 .footer-a{
   display: flex;
   gap: 150px;
   margin-top: 100px;
+  margin-right: 220px;
 }
 .lien{
   color: #fff;
@@ -263,17 +285,21 @@ footer{
 }
 
 .langues{
-  width: 100px;
-  height: 30px;
+  fill: currentColor;
+  width: 120px;
+  height: 40px;
+  font-style: 1rem;
+  font-weight: 400;
+  padding: 0;
   border-radius: 5px;
   background-color: transparent;
   color: #fff;
+  margin-bottom:30px;
 }
 .footer-last{
-  margin-top: 40px;
-  margin-left: -700px;
+  margin-top: 30px;
+  margin-left: -730px; 
 }
-/*
-.langues::before{
-  content:'<ion-icon name="globe-outline"></ion-icon>';
-}*/
+.icons{
+  height: 15px;
+}
