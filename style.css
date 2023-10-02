@@ -133,14 +133,13 @@ button{
 @media screen and (max-width:414px) {
   .btn-getStarted{
     padding: 0.2rem 0.1rem;
-    
   }
 }
 /* le main de ma page*/
 main{
   background-color:black;
   color:#fff;
-  width: 100vw;
+ /* width: 100vw;*/
 }
 /* debut de mon premier div*/
 
@@ -155,24 +154,30 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 90px;
+  gap: 4rem;
 }
 .tv h2{
   text-align:left;
   line-height: 15vh;
 }
 .tv p{
-  font-size: 25px;
-  margin-top: 20px;
+  margin-top: 2rem;
   line-height: -20px;
 }
 
-@media screen (max-width: 1090px){ }
-.tv-tele{
-  display:block;
-
+@media screen and (max-width: 1096px){ 
+ /* .block-text{
+    width: 100vw;
+ }
+ .block-image{
+  display: flex;
+  justify-content: center;
+ }*/
+ .tv{
+  display: block;
+  padding: 20px 0;
+ }
 }
-
 
 hr{
   border: 1px solide #232323;
@@ -203,20 +208,33 @@ hr{
 
 /* ma trosieme div*/
 .texte{
-  margin-top: 100px;
+  margin-top: 4rem;
   height: 50vh;
   width: 100vw;
-  margin-left: 150px;
+  margin-left: 5rem;
 }
 .texte h2{
-  font-size: 50px;
   font-weight: bold;
 }
-.texte p{
+.texte p{  
   margin-top: 20px;
-  font-size: 25px;
   line-height: -5px;
 }
+@media screen and (max-width: 545px){ 
+  .texte{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 30vh;
+    margin-left: -1rem;
+  }
+  .texte h2{
+    font-size: 1.7rem;
+    margin: 20px 2px;
+  }
+  .texte p{
+    font-size: 0.7rem;
+  }
 
 /* ma quatrieme  div*/
 .kid{
