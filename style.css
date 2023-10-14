@@ -102,7 +102,7 @@ button{
   padding: 0.75rem 1.5rem;
   border: 1px solid #c11119;
   border-radius: 5px;
-}
+ }
 
 /*media queries */
 @media screen and (max-width: 1300px){ 
@@ -194,7 +194,6 @@ margin: 20px 30%;
   .navbar-netflix img{
     height: 35px;
 }
-
   .header-netflix h2{
     margin-top: 3em;
     text-align: center;
@@ -425,6 +424,7 @@ footer{
   margin-top: 30px;
   margin-left: -730px; 
 }
+/*
 .icons{
   height: 15px;
-}
+}*/
