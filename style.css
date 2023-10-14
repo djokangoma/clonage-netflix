@@ -71,7 +71,7 @@ button{
   position: relative;
 }
 .email-label input{
-  width: 40vw;
+  width: 25vw;
   height: auto;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -94,7 +94,7 @@ button{
   padding: 0 1px;
 }
 .btn-getStarted{
-  width: 22vw;
+  width: 15vw;
   font-size: 1.5rem;
   font-weight: 500; 
   background:#c11119;
@@ -104,122 +104,63 @@ button{
   border-radius: 5px;
  }
 
-/*media queries */
-@media screen and (max-width: 1300px){ 
-  .btn-getStarted{
-    .header-netflix h2{
-      margin-top: 5em;
-    }
-  }
-  .header-netflix p{
-    line-height: 3em;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 871px){ 
-  .btn-getStarted{
-    padding: 0.5rem 1rem;
-  }
-}
-
-@media screen and (max-width: 799px){
-  .btn-getStarted{
-    padding: 0.5rem .3rem;
-  }
-}
-
-@media screen and (max-width:698px) {
+ @media  (min-width:1279px)and(max-width:1440px) { 
   .header-netflix{
-    height: 100vh;
+    height: 60vh;
   }
-  .btn-signIn{
-    margin-top: 20px; 
+}
+@media (min-width:1100px) and (max-width: 1278px){ 
+  .header-netflix{
+    height: 80vh;
   }
-
-  .header-netflix h2{
-    line-height: 40px;
-   
+   .btn-getStarted{
+    width: 15vw;
+   padding: 0.35rem .5rem;
+  }
 }
 .header-netflix p{
-  line-height: 1.6rem;
-  text-align: center;
-}
-.navbar-netflix img{
-  height: 40px;
-}
+  font-size: 1.5rem;  
+ }
+
+ @media (min-width:200px) and (max-width: 1099px){
 .container-email-btn{
-  display: block;
-  margin: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 7rem;
 }
-.email-label{
-margin: 20px 30%; 
+.email-label input{
+  width: 60vw;
+} 
+.btn-getStarted{
+  width: 60vw;
+  margin-bottom: 1rem;
+}
+.header-netflix h2 {
+  font-size: 2rem;
+}
+.header-netflix p{
+  font-weight: 400;
+  font-size: 1.5em;
 }
 .btn-getStarted{
-  padding: 0.5rem .1em;
-  width: 30vw;
-  margin: 0 35% 5% 35%;
+ padding: 0.15rem .2rem;
 }
 }
-
-@media screen and (max-width:495px) {
-  .header-netflix{
-    height: 100vh;
-  }
-
-.navbar-netflix img{
-  height: 35px;
-}
-.container-email-btn{
-  display: block;
-  margin: 20px ;
-}
-.email-label{
-margin: 20px 30%; 
-}
-.btn-getStarted{
-  padding: 0.5rem .1em;
-  width: 50vw;
-  margin: 0 25%;
-}
-}
-
-@media screen and (max-width:385px) {
-  .header-netflix{
-    height: 100vh;
-  }
-  .btn-signIn{
-    width: 14vh;
-  }
-  .navbar-netflix img{
-    height: 35px;
-}
-  .header-netflix h2{
-    margin-top: 3em;
-    text-align: center;
-    font-family: Netflix sans, Helvetica,'Segoe UI', 'roboto', 'ubuntu', Verdana, sans-serif;
-  }
-  .btn-getStarted{
-    padding: 0.5rem .1em;
-    font-size: .9rem;
-    width: 40vw;
-    margin: 0 15%;
-  }
-  .email-label{
-    width: 60vh;
-    margin: 2% 10%;
-    padding: 0.3rem 1rem 0 1rem;
-    }
 
 /* le main de ma page*/
-
+hr{
+  border: 1px solide #232323;
+  height: 0.2rem;
+  bottom: -0.5rem;
+}
 main{
   background-color:black;
   color:#fff; 
   width: 100vw;
 }
-/* debut de mon premier div*/
 
+/* debut de mon premier div*/
 .block-tv{
   width: 100vw;
   height: 80vh;
@@ -229,39 +170,39 @@ main{
 }
 .tv{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
+ align-items: center;
 }
-.tv h2{
-  text-align:left;
-  line-height: 15vh;
+@media (min-width:557px) and (max-width: 1099px){
+.block-tv{
+  height: 100vh;
 }
-.tv p{
-  margin-top: 2rem;
-  line-height: -20px;
+  .tv{
+      display: flex;
+      flex-direction: column;
+  }
 }
-
-@media screen and (max-width: 1096px){ 
- /* .block-text{
-    width: 100vw;
- }
- .block-image{
-  display: flex;
-  justify-content: center;
- }*/
- .tv{
-  display: block;
-  padding: 20px 0;
- }
-}
-
-hr{
-  border: 1px solide #232323;
-  height: 0.2rem;
-  bottom: -0.5rem;
-}
-
+  @media (min-width:549px) and (max-width: 556px){
+    .tv{
+      display: flex;
+      flex-direction: column;
+  }
+   .block-image{
+        width:400vw;
+        height:300vh ;
+    }
+    .block-text h2{
+        font-size: 2rem;
+    }
+    .block-text p{
+      font-size: 1.5rem;
+  }
+  }
+  @media (min-width:200) and (max-width: 548px){
+    .block-image{
+        width:250vw;
+        height: 170vh;
+    }
+  }
 /* la deuxieme div: la section phone*/
 .phone{
   display: flex;
@@ -305,6 +246,7 @@ hr{
     height: 30vh;
     margin-left: -1rem;
   }
+}
   .texte h2{
     font-size: 1.7rem;
     margin: 20px 2px;
@@ -422,9 +364,5 @@ footer{
 }
 .footer-last{
   margin-top: 30px;
-  margin-left: -730px; 
-}
-/*
-.icons{
-  height: 15px;
-}*/
+  margin-left: -730px;
+   }
