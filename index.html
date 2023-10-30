@@ -32,8 +32,9 @@
             </div>
         </div>
     </header> 
-    <hr>  
+     <hr>
     <main>
+         
         <!-- debut de mon premier div: qui traite la section television-->
         <div class="block-tv">
             <div class="tv">
@@ -42,8 +43,8 @@
                     <p>Watch on Smart TVs, Playstation, Xbox,<br>
                          Chromecast, Apple TV, Blu-ray players, and <br> more.</p>
                 </div>
-                <div class="block-image">
-                   <img src="assets/tv.png" alt="tv" height="400vh" width="550wh">
+                <div class="image-tv">
+                   <img src="assets/tv.png" alt="tv" >
                 </div>
             </div> 
         </div> 
@@ -52,30 +53,36 @@
         <!-- la deuxieme div sur android-->
         <div class="phone">
             <div class="bloc-phone">
-                <img src="assets/mobile-0819.jpg" alt="phone" height="400vh" width="500wh">
-            </div>
-            <div>
-                <h2>Download your shows <br> to watch offline</h2>
-                <p>Save your favorites easily and always have <br> something to watch..</p>
+               <div>
+                   <img src="assets/mobile-0819.jpg" alt="phone">
+               </div>
+               <div class="texte-phone">
+                   <h2>Download your shows <br> to watch offline</h2>
+                   <p>Save your favorites easily and always have <br> something to watch..</p>
+               </div>
             </div>
         </div>
        <hr>
     <!--ma troisieme div sur un petit texte-->
         <div class="texte">
-            <h2>
-                Watch <br> everywhere
-            </h2>
-            <p>
-                Stream unlimited movies and TV <br>
-                 shows on your phone, tablet, laptop,<br>
-                  and TV.
-            </p>
+            <div class="blocText">
+                   <h2>
+                     <p1 class="blocText-1" >Watch</p1> <p2 class="blocText-1">everywhere</p2>  
+                   </h2>
+                <div class="blocText-2">
+                 <p1>Stream unlimited movies and TV</p1>  
+                 <p2>shows on your phone, tablet, laptop,</p2>
+                <p3>and TV.</p3>
+               </div> 
+            </div>
         </div>
         <hr>
         <!-- ma quatrième div sur le kid -->
         <div class="kid">
         <div class="kids-container">
-            <img src="assets/kids.png" alt="kids" height="400vh" width="500wh" >
+            <div>
+               <img src="assets/kids.png" alt="kids"  >
+            </div>
             <div class="kids-text">
               <h2>Create profiles for <br>kids</h2>
               <p>Send kids on adventures with their favorite <br>
@@ -121,36 +128,38 @@
     </main>    
         <footer>
             <div class="footer">
-                <a href="#" class="lien"> Questions? Contact us..</a> <br>
-                <div class="footer-a">
+                <a href="#" class="link"> Questions? Contact us..</a> <br>
+                <div class="footer-link">
                     <div>
                         <a href="#">FAQ</a> <br>
-                        <a href="#">Media Center</a> <br>
-                        <a href="#">Ways to Watch</a> <br>
-                        <a href="#">Cookie Preferences</a> <br>
+                        <a href="#">Investor Relations</a> <br>
+                        <a href="#">Privacy</a> <br>
                         <a href="#">Speed Test</a> <br>
                     </div>
                     <div>
                         <a href="#">Help Center</a> <br>
-                        <a href="#">Investor Relations</a> <br>
-                        <a href="#">Terms of Use</a> <br>
-                        <a href="#">Corporate Information</a> <br>
+                        <a href="#">Jobs</a> <br>
+                        <a href="#">Cookie Preferences</a> <br>
                         <a href="#">Legal Notices</a> <br>
                     </div>
                     <div>
                         <a href="#">Account</a> <br>
-                        <a href="#">Jobs</a> <br>
-                        <a href="#">Privacy</a> <br>
-                        <a href="#"> Contact Us</a> <br>
+                        <a href="#">Ways to Watch</a> <br>
+                        <a href="#"> Corporate Information</a> <br>
                         <a href="#">Only on Netflix</a> <br>
                     </div>
+                    <div>
+                        <a href="#">Media Center</a><br>
+                        <a href="#">Terms of Use</a><br>
+                        <a href="#">Contact Us</a><br>
                     </div>
-                    <div class="footer-last">
+                    </div>
+                    <div class="footer-langues">
                         <select name="langues" id="langues" class="langues" >
                              <option value="English"><span class="icons"><ion-icon name="globe-outline"></ion-icon></span>English</option>
-                        </select>
-                        <h4>Netflix Congo - Kinshasa</h4>
+                        </select>  
                     </div>
+                    <h4>Netflix Congo - Kinshasa</h4>
                 </div>
         </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
